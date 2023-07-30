@@ -1,0 +1,219 @@
+/* Global styles */
+* {
+  box-sizing: border-box; /* Applies border-box sizing model to all elements */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; /* Sets the font-family for the entire page */
+}
+
+/* Header styles */
+header {
+  background-color: #d65745; /* Dark background color for the header */
+  height: 125px; /* Sets the height of the header */
+  padding: 10px 20px; /* Adds padding to the header content */
+  display: flex; /* Uses flexbox layout for header content */
+  align-items: center; /* Vertically aligns items within the header */
+}
+
+header > img {
+  width: auto; /* Automatically adjusts the width of the image within the header */
+  height: 100%; /* Makes the image take the full height of the header */
+}
+
+header > nav {
+  display: flex; /* Uses flexbox layout for navigation links */
+  margin-left: 65%; /* Sets the left margin for the navigation links */
+  gap: 24%; /* Adds a gap between navigation link items */
+  
+}
+
+
+
+header > nav > a {
+  color: white; /* Sets the color of the links to white */
+  text-decoration: none; /* Removes underline from the links */
+  font-size: 1.2rem; /* Sets the font size of the links to 1.2rem */
+}
+
+header > nav > a:hover {
+  color: #e74c3c; /* Changes the link color to #e74c3c (a shade of red) on hover */
+}
+
+/* Styles for elements with the class "pizza" */
+.pizza {
+  color: white; /* Sets the color of elements with class "pizza" to white */
+}
+
+.navigation{
+  display: flex; /* Uses flexbox layout for navigation links */
+  margin-left: 70%; /* Sets the left margin for the navigation links */
+  gap: 24%; /* Adds a gap between navigation link items */
+}
+
+
+
+/* Container styles */
+.container {
+  max-width: 600px; /* Sets the maximum width of the container */
+  margin: 0 auto; /* Centers the container horizontally */
+  padding: 20px; /* Adds padding to the container content */
+}
+
+/* Pizza section styles */
+ .pizza-section {
+  background-color: #f1f1f1; /* Light background color for the pizza section*/
+} 
+
+h2 {
+  text-align: center; /* Centers the heading within its container */
+  font-size: 3rem; /* Sets the font size of the heading */
+  margin-bottom: 20px; /* Adds margin at the bottom of the heading */
+  color: black; /* Sets the text color of the heading */
+}
+
+/* Pizza options styles */
+.pizza-options {
+  display: grid; /* Uses grid layout for pizza options */
+  gap: 10px; /* Adds a gap between grid items */
+}
+
+.option label {
+  font-weight: bold; /* Applies bold font weight to the labels */
+}
+
+/* Order button styles */
+#order-btn {
+  background-color: #e74c3c; /* Red background color for the order button */
+  color: #fff; /* White text color for the order button */
+  padding: 10px 20px; /* Adds padding to the order button */
+  text-decoration: none; /* Removes underline from the order button text */
+  border: none; /* Removes the button border */
+  border-radius: 5px; /* Rounds the corners of the button */
+  font-size: 1.2rem; /* Sets the font size of the button text */
+  transition: background-color 0.3s ease-in-out; /* Adds a smooth transition effect */
+  cursor: pointer; /* Changes the cursor to a pointer on hover */
+}
+
+#order-btn:hover {
+  background-color: #c0392b; /* Darker background color for the order button on hover */
+}
+
+/* Footer styles */
+footer {
+  background-color: #333; /* Dark background color for the footer */
+  color: #fff; /* White text color for the footer content */
+  padding: 10px; /* Adds padding to the footer content */
+  text-align: center; /* Centers the text within the footer */
+}
+
+/* Hero section styles */
+.hero {
+  background-image: url('../image/pizza2.jpg'); /* Sets a background image for the hero section */
+  background-size: cover; /* Scales the background image to cover the entire section */
+  background-position: center; /* Centers the background image */
+  height: 100vh; /* Sets the height of the hero section to the full viewport height */
+  display: flex; /* Uses flexbox layout for hero section content */
+  align-items: center; /* Vertically aligns items within the hero section */
+  justify-content: center; /* Horizontally aligns items within the hero section */
+}
+
+.hero-content {
+  text-align: center; /* Centers the content within the hero section */
+  color: #111010; /* Sets the text color of the hero content */
+}
+
+h1 {
+  font-size: 3rem; /* Sets the font size of the heading */
+  display: contents; /* Makes the heading content display inline with the other elements */
+  margin-bottom: 20px; /* Adds margin at the bottom of the heading */
+  color: white; /* Sets the text color of the heading */
+  position: absolute; /* Positions the heading absolutely within its parent container */
+  bottom: 580px; /* Sets the bottom position of the heading */
+  left: 130px; /* Sets the left position of the heading */
+}
+
+h5 {
+  font-size: 3em; /* Sets the font size of the heading */
+}
+
+.welcome {
+  color: white; /* Sets the text color for the welcome class */
+}
+
+p {
+  font-size: 1.5rem; /* Sets the font size of the paragraphs */
+  margin-bottom: 30px; /* Adds margin at the bottom of paragraphs */
+  color: white; /* Sets the text color of the paragraphs */
+}
+
+/* Button styles */
+.btn {
+  background-color: #e74c3c; /* Red background color for buttons */
+  color: #fff; /* White text color for buttons */
+  padding: 10px 20px; /* Adds padding to the button */
+  text-decoration: none; /* Removes underline from button text */
+  border-radius: 5px; /* Rounds the corners of the button */
+  font-size: 1.2rem; /* Sets the font size of the button text */
+  transition: background-color 0.3s ease-in-out; /* Adds a smooth transition effect */
+}
+
+.btn:hover {
+  background-color: #c0392b; /* Darker background color for buttons on hover */
+}
+
+/* Payment section styles */
+.payment-section {
+  background-color: #f1f1f1; /* Light background color for the payment section */
+  padding: 20px; /* Adds padding to the payment section */
+  margin-top: 20px; /* Adds margin at the top of the payment section */
+}
+
+/* Payment options styles */
+.payment-options {
+  display: flex; /* Uses flexbox layout for payment options */
+  flex-direction: column; /* Arranges payment options in a column */
+  align-items: flex-start; /* Aligns payment options to the left */
+  gap: 10px; /* Adds a gap of 10px between payment option items */
+}
+
+.payment-options label {
+  font-weight: bold; /* Applies bold font weight to the labels */
+}
+
+#payment-method {
+  padding: 8px; /* Adds padding to the payment method input */
+  width: 100%; /* Sets the width of the payment method input to 100% */
+}
+
+.toppings-display {
+  margin-top: 10px; /* Adds margin at the top of the toppings display */
+  font-weight: bold; /* Applies bold font weight to the toppings display */
+}
+
+.total-price {
+  margin-top: 20px; /* Adds margin at the top of the total price display */
+  font-size: 1.2rem; /* Sets the font size of the total price display */
+}
+
+/* Payment methods styles */
+.payment-methods {
+  display: flex; /* Uses flexbox layout for payment methods */
+  flex-direction: column; /* Arranges payment methods in a column */
+  gap: 10px; /* Adds a gap of 10px between payment method items */
+}
+
+.payment-methods label {
+  display: flex; /* Uses flexbox layout for the labels of payment methods */
+  align-items: center; /* Aligns items within the labels */
+}
+
+.payment-methods input[type="radio"] {
+  margin-right: 8px; /* Adds a margin on the right side of radio inputs */
+}
+
+.payment-methods .btn {
+  margin-top: 20px; /* Adds margin at the top of the payment method button */
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Order Page">
+  <title>Order</title>
+  <meta name="robots" content="noindex, nofollow">
+  <!-- External JavaScript file linked to the HTML -->
+  <script src="./JS/script.js"></script>
+  <!-- Link to an external CSS file for styling the page -->
+  <link rel="stylesheet" type="text/css" href="./CSS/style.css">
+</head>
+
+<body>
+
+  <header>
+    <h5 class="pizza">Pizza Order</h5>
+    <nav class="navigation">
+
+      <!-- The main heading of the page, acting as a logo -->
+
+      <!-- Anchor tag for the home page  -->
+      <a href="index.html">Home</a>
+
+      <a href="order.html">Order</a>
+    </nav>
+  </header>
+  <main>
+    <!-- Section for building the pizza -->
+    <section class="pizza-section">
+      <!-- The header section at the top of the page -->
+
+
+
+      <div class="container">
+        <h2>Build Your Pizza</h2>
+        <div class="pizza-options">
+          <!-- Options for selecting pizza size -->
+          <div class="option">
+            <label for="size">Size:</label>
+            <select id="size">
+              <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+            </select>
+          </div>
+          <!-- Options for selecting pizza crust -->
+          <div class="option">
+            <label for="crust">Crust:</label>
+            <select id="crust">
+              <option value="thin">Thin</option>
+              <option value="thick">Thick</option>
+            </select>
+          </div>
+          <!-- Options for selecting pizza sauces -->
+          <div class="option">
+            <label for="toppings">Sauces:</label>
+            <input type="radio" id="sauce-1" name="sauce" value="Tomato Sauce"> Tomato Sauce
+            <input type="radio" id="sauce-2" name="sauce" value="Ranch"> Ranch
+            <input type="radio" id="sauce-3" name="sauce" value="Creamy Garlic"> Creamy Garlic
+            <input type="radio" id="sauce-4" name="sauce" value="BBQ and Tomato mix"> BBQ and Tomato mix
+          </div>
+          <!-- Options for selecting cheese toppings -->
+          <div class="option">
+            <label for="toppings">Toppings Cheese:</label>
+            <input type="checkbox" id="toppings" value="Mozzarella" checked> Mozzarella
+            <input type="checkbox" id="toppings2" value="Cheddar"> Cheddar
+            <input type="checkbox" id="toppings3" value="Feta"> Feta
+            <input type="checkbox" id="toppings4" value="Parmesan"> Parmesan
+            <input type="checkbox" id="toppings5" value="Asiago Parmesan"> Asiago Parmesan
+          </div>
+          <!-- Options for selecting meat toppings -->
+          <div class="option">
+            <label for="toppings">Toppings Meat:</label>
+            <input type="checkbox" id="toppings6" value="Pepperoni"> Pepperoni
+            <input type="checkbox" id="toppings7" value="Bacon"> Bacon
+            <input type="checkbox" id="toppings8" value="Ham"> Ham
+            <input type="checkbox" id="toppings9" value="Sausage"> Sausage
+            <input type="checkbox" id="toppings10" value="Ground Beef"> Ground Beef
+          </div>
+          <!-- Options for selecting vegetarian toppings -->
+          <div class="option">
+            <label for="toppings">Toppings Vegetarian:</label>
+            <input type="checkbox" id="toppings11" value="Onions"> Onions
+            <input type="checkbox" id="toppings12" value="Green Pepper"> Green Pepper
+            <input type="checkbox" id="toppings13" value="Red Roasted Pepper"> Red Roasted Pepper
+            <input type="checkbox" id="toppings14" value="Pineapple"> Pineapple
+            <input type="checkbox" id="toppings15" value="Tomato"> Tomato
+            <input type="checkbox" id="toppings16" value="Mushrooms"> Mushrooms
+          </div>
+          <!-- Option for selecting delivery -->
+          <div class="option">
+            <label for="delivery">Delivery:</label>
+            <input type="checkbox" id="delivery">
+          </div>
+          <!-- Button to place the order -->
+          <button id="order-btn">Place Order</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section for payment -->
+    <section class="payment-section">
+      <div class="container">
+        <h2>Payment</h2>
+        <div class="payment-options">
+          <!-- Option for selecting the payment method -->
+          <label for="payment-method">Payment Method:</label>
+          <select id="payment-method">
+            <option value="credit-card">Credit Card</option>
+            <option value="paypal">PayPal</option>
+          </select>
+          <!-- Displaying selected toppings -->
+          <label>Selected Toppings:</label>
+          <div id="toppings-display"></div>
+          <!-- Input field for showing the total price -->
+          <label for="total-price">Total Price:</label>
+          <input type="text" id="total-price" readonly>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
